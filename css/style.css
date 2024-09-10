@@ -77,7 +77,7 @@ button {
     font-size: 16px;
     margin-right: 10px;
 }
-#output, #sot_category_output, #surplus_os_single_output, #offer_wallet_output, #primary_home_output, #salelp_primary_output {
+#output, #sot_category_output, #surplus_os_single_output, #offer_wallet_output, #primary_home_output, #salelp_primary_output, #global_thin_output {
     margin-top: 20px;
     padding: 8px 12px;
     border: 1px solid #ccc;
@@ -94,6 +94,6 @@ button {
 
 
 /* ES Banner */
-#es-banner, #primary_home_es-banner{
+#es-banner, #primary_home_es-banner, #global_thin_es-banner{
     display: none;
 }
