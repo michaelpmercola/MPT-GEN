@@ -17,6 +17,9 @@
         <h3>Offer</h3>
         <a href="#" onclick="showPage('page5')">Wallet</a>
         <a href="#" onclick="showPage('page6')">Primary Banner (Homepage)</a>
+        <a href="#" onclick="showPage('page7')">Global Thin</a>
+
+
     </div>
     <div id="mainContent" class="content">
         <div id="page1" class="page">    
@@ -157,116 +160,172 @@
         <div id="page5" class="page" style="display:none;">
             
         <div class="container">
-        <h1>Offer Wallet Code Generator</h1>
-        <div class="form-group">
-            <label for="offer_wallet_field1">Slot Number:</label>
-            <input type="text" id="offer_wallet_field1" placeholder="Slot Number" required>
-        </div>
-        <div class="form-group">
-            <label for="offer_wallet_field2">Link:</label>
-            <input type="text" id="offer_wallet_field2" placeholder="Banner link" required>
-        </div>
-        <div class="form-group">
-            <label for="offer_wallet_field3">CID:</label>
-            <input type="text" id="offer_wallet_field3" placeholder="Offer CID" required>
-        </div>
-        <div class="form-group">
-            <label for="offer_wallet_field4">Alt:</label>
-            <input type="text" id="offer_wallet_field4" placeholder="Alt tags (Banner offer details)" required>
-        </div>
-        <div class="form-group">
-            <label for="offer_wallet_field5">Banner:</label>
-            <input type="text" id="offer_wallet_field5" placeholder="Banner URL" required>
-        </div>
-        <div class="form-group" id="es-banner">
-            <label for="offer_wallet_field6">ES Banner:</label>
-            <input type="text" id="offer_wallet_field6" placeholder="ES Banner URL">
-        </div>
+            <h1>Offer Wallet Code Generator</h1>
+            <div class="form-group">
+                <label for="offer_wallet_field1">Slot Number:</label>
+                <input type="text" id="offer_wallet_field1" placeholder="Slot Number" required>
+            </div>
+            <div class="form-group">
+                <label for="offer_wallet_field2">Link:</label>
+                <input type="text" id="offer_wallet_field2" placeholder="Banner link" required>
+            </div>
+            <div class="form-group">
+                <label for="offer_wallet_field3">CID:</label>
+                <input type="text" id="offer_wallet_field3" placeholder="Offer CID" required>
+            </div>
+            <div class="form-group">
+                <label for="offer_wallet_field4">Alt:</label>
+                <input type="text" id="offer_wallet_field4" placeholder="Alt tags (Banner offer details)" required>
+            </div>
+            <div class="form-group">
+                <label for="offer_wallet_field5">Banner:</label>
+                <input type="text" id="offer_wallet_field5" placeholder="Banner URL" required>
+            </div>
+            <div class="form-group" id="es-banner">
+                <label for="offer_wallet_field6">ES Banner:</label>
+                <input type="text" id="offer_wallet_field6" placeholder="ES Banner URL">
+            </div>
 
-        <label>
-            <input type="radio" id="offer_wallet_lang1" name="lang_opt" checked>
-            EN Only
-        </label>        
-        <label>
-            <input type="radio" id="offer_wallet_lang2" name="lang_opt">
-            With ES
-        </label>
-        <label>
-            <input type="radio" id="offer_wallet_lang3" name="lang_opt">
-            With Spanish Images Banner
-        </label>
-        </br></br>
+            <label>
+                <input type="radio" id="offer_wallet_lang1" name="lang_opt" checked>
+                EN Only
+            </label>        
+            <label>
+                <input type="radio" id="offer_wallet_lang2" name="lang_opt">
+                With ES
+            </label>
+            <label>
+                <input type="radio" id="offer_wallet_lang3" name="lang_opt">
+                With Spanish Images Banner
+            </label>
+            </br></br>
 
 
-        <button onclick="offer_wallet_generateCode()">Generate Code</button>
-        <button onclick="offer_wallet_copyCode()">Copy Code</button>
-        <button onclick="offer_wallet_resetFields()">Reset Fields</button>
-        <div id="offer_wallet_output" contenteditable="true" onclick="this.select()" aria-label="Generated code output area"></div>
+            <button onclick="offer_wallet_generateCode()">Generate Code</button>
+            <button onclick="offer_wallet_copyCode()">Copy Code</button>
+            <button onclick="offer_wallet_resetFields()">Reset Fields</button>
+            <div id="offer_wallet_output" contenteditable="true" onclick="this.select()" aria-label="Generated code output area"></div>
         </div>
 
         </div>
         <div id="page6" class="page" style="display:none;">
             
         <div class="container">
-        <h1>Primary Banner (Homepage)</h1>
-        <div class="form-group">
-            <label for="primary_home_field1">Slot Number:</label>
-            <input type="text" id="primary_home_field1" placeholder="Slot Number" required>
-        </div>
-        <div class="form-group">
-            <label for="primary_home_field2">Link:</label>
-            <input type="text" id="primary_home_field2" placeholder="Banner link" required>
-        </div>
-        <div class="form-group">
-            <label for="primary_home_field3">CID:</label>
-            <input type="text" id="primary_home_field3" placeholder="Offer CID" required>
-        </div>
-        <div class="form-group">
-            <label for="primary_home_field4">Alt:</label>
-            <input type="text" id="primary_home_field4" placeholder="Alt tags (Banner offer details)" required>
-        </div>
-        <div class="form-group">
-            <label for="primary_home_field5">Desktop Banner:</label>
-            <input type="text" id="primary_home_field5" placeholder="Desktop Banner URL" required>
-        </div>
-        <div class="form-group">
-            <label for="primary_home_field6">Mobile Banner:</label>
-            <input type="text" id="primary_home_field6" placeholder="Mobile Banner URL">
-        </div>
-        <div id="primary_home_es-banner">        
-        <div class="form-group">
-            <label for="primary_home_field7">ES Desktop Banner:</label>
-            <input type="text" id="primary_home_field7" placeholder="ES Desktop Banner URL" required>
-        </div>
-        <div class="form-group">
-            <label for="primary_home_field8">ES Mobile Banner:</label>
-            <input type="text" id="primary_home_field8" placeholder="ES Mobile Banner URL">
+            <h1>Primary Banner (Homepage)</h1>
+            <div class="form-group">
+                <label for="primary_home_field1">Slot Number:</label>
+                <input type="text" id="primary_home_field1" placeholder="Slot Number" required>
+            </div>
+            <div class="form-group">
+                <label for="primary_home_field2">Link:</label>
+                <input type="text" id="primary_home_field2" placeholder="Banner link" required>
+            </div>
+            <div class="form-group">
+                <label for="primary_home_field3">CID:</label>
+                <input type="text" id="primary_home_field3" placeholder="Offer CID" required>
+            </div>
+            <div class="form-group">
+                <label for="primary_home_field4">Alt:</label>
+                <input type="text" id="primary_home_field4" placeholder="Alt tags (Banner offer details)" required>
+            </div>
+            <div class="form-group">
+                <label for="primary_home_field5">Desktop Banner:</label>
+                <input type="text" id="primary_home_field5" placeholder="Desktop Banner URL" required>
+            </div>
+            <div class="form-group">
+                <label for="primary_home_field6">Mobile Banner:</label>
+                <input type="text" id="primary_home_field6" placeholder="Mobile Banner URL">
+            </div>
+            <div id="primary_home_es-banner">        
+            <div class="form-group">
+                <label for="primary_home_field7">ES Desktop Banner:</label>
+                <input type="text" id="primary_home_field7" placeholder="ES Desktop Banner URL" required>
+            </div>
+            <div class="form-group">
+                <label for="primary_home_field8">ES Mobile Banner:</label>
+                <input type="text" id="primary_home_field8" placeholder="ES Mobile Banner URL">
+            </div>
+            </div>
+
+            <label>
+                <input type="radio" id="primary_home_lang1" name="lang_opt_2" checked>
+                EN Only
+            </label>        
+            <label>
+                <input type="radio" id="primary_home_lang2" name="lang_opt_2">
+                With ES
+            </label>
+            <label>
+                <input type="radio" id="primary_home_lang3" name="lang_opt_2">
+                With Spanish Images Banner
+            </label>
+            </br></br>
+
+
+            <button onclick="primary_home_generateCode()">Generate Code</button>
+            <button onclick="primary_home_copyCode()">Copy Code</button>
+            <button onclick="primary_home_resetFields()">Reset Fields</button>
+            <div id="primary_home_output" contenteditable="true" onclick="this.select()" aria-label="Generated code output area"></div>
         </div>
         </div>
 
-        <label>
-            <input type="radio" id="primary_home_lang1" name="lang_opt_2" checked>
-            EN Only
-        </label>        
-        <label>
-            <input type="radio" id="primary_home_lang2" name="lang_opt_2">
-            With ES
-        </label>
-        <label>
-            <input type="radio" id="primary_home_lang3" name="lang_opt_2">
-            With Spanish Images Banner
-        </label>
-        </br></br>
+        <div id="page7" class="page" style="display:none;">
+            
+        <div class="container">
+            <h1>Global Thin</h1>
+            <div class="form-group">
+                <label for="global_thin_field1">Link:</label>
+                <input type="text" id="global_thin_field1" placeholder="Banner link" required>
+            </div>
+            <div class="form-group">
+                <label for="global_thin_field2">CID:</label>
+                <input type="text" id="global_thin_field2" placeholder="Offer CID" required>
+            </div>
+            <div class="form-group">
+                <label for="global_thin_field3">Alt:</label>
+                <input type="text" id="global_thin_field3" placeholder="Alt tags (Banner offer details)" required>
+            </div>
+            <div class="form-group">
+                <label for="global_thin_field4">Desktop Banner:</label>
+                <input type="text" id="global_thin_field4" placeholder="Desktop Banner URL" required>
+            </div>
+            <div class="form-group">
+                <label for="global_thin_field5">Mobile Banner:</label>
+                <input type="text" id="global_thin_field5" placeholder="Mobile Banner URL">
+            </div>
+            <div id="global_thin_es-banner">        
+            <div class="form-group">
+                <label for="global_thin_field6">ES Desktop Banner:</label>
+                <input type="text" id="global_thin_field6" placeholder="ES Desktop Banner URL" required>
+            </div>
+            <div class="form-group">
+                <label for="global_thin_field7">ES Mobile Banner:</label>
+                <input type="text" id="global_thin_field7" placeholder="ES Mobile Banner URL">
+            </div>
+            </div>
+
+            <label>
+                <input type="radio" id="global_thin_lang1" name="lang_opt_2" checked>
+                EN Only
+            </label>        
+            <label>
+                <input type="radio" id="global_thin_lang2" name="lang_opt_2">
+                With ES
+            </label>
+            <label>
+                <input type="radio" id="global_thin_lang3" name="lang_opt_2">
+                With Spanish Images Banner
+            </label>
+            </br></br>
 
 
-        <button onclick="primary_home_generateCode()">Generate Code</button>
-        <button onclick="primary_home_copyCode()">Copy Code</button>
-        <button onclick="primary_home_resetFields()">Reset Fields</button>
-        <div id="primary_home_output" contenteditable="true" onclick="this.select()" aria-label="Generated code output area"></div>
+            <button onclick="global_thin_generateCode()">Generate Code</button>
+            <button onclick="global_thin_copyCode()">Copy Code</button>
+            <button onclick="global_thin_resetFields()">Reset Fields</button>
+            <div id="global_thin_output" contenteditable="true" onclick="this.select()" aria-label="Generated code output area"></div>
+        </div>
         </div>
 
-
-        </div>
     </div>
 
     <script>
@@ -297,5 +356,6 @@
     <script src="js/offer_wallet_code.js"></script>
     <script src="js/primary_home_code.js"></script>
     <script src="js/salelp_primary_code.js"></script>
+    <script src="js/global_thin_code.js"></script>    
 </body>
 </html>
