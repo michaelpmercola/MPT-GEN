@@ -11,7 +11,7 @@ return;
     }
 
 
-    const sot_category_code = `<div class="slick-item">\n<div class="product-list sale-badge">\n<div class="sku-img">\n<span><a href="${sot_category_field1}">\n<img alt="${sot_category_field2}" src="https://media.mercolamarket.com/assets/shopimages/18-${sot_category_field4}-Catalog_Image-thumb.jpg" /></a></span>\n</div>\n<div class="sku-nameprice"> <h3 class="prodname"><a href="${sot_category_field1}" title="${sot_category_field2}" tabindex="0"><span id="alternatename">${sot_category_field3}</span></a></h3></div>\n</div>\n</div>\n`;
+    const sot_category_code = `<div class="slick-item">\n<div class="product-list sale-badge">\n<div class="sku-img">\n<span><a href="${sot_category_field1}">\n<img alt="${sot_category_field2}" src="https://media.mercolamarket.com/assets/shopimages/18-${sot_category_field4}-Catalog_Image-thumb.jpg" /></a></span>\n</div>\n<div class="sku-nameprice"> <h3 class="prodname"><a href="${sot_category_field1}" title="${sot_category_field2}" tabindex="0"><span id="alternatename">${sot_category_field3}</span></a></h3><span class="price">&nbsp;</span></div></div>\n</div>\n</div>\n`;
     document.getElementById('sot_category_output').textContent = sot_category_code;
     
 }
