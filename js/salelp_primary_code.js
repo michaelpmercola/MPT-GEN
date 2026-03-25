@@ -17,7 +17,7 @@ return;
     
 
 
-    const salelp_primary_code = `<!-- EN Sale LP Primary Banner -->\n<div class="homebanner">\n<div id="bfdesk"><a onclick="s_objectID='Shop Banner';"href="${salelp_primary_field2}?cid_source=banner&amp;cid_medium=int&amp;cid=${salelp_primary_field3}&amp;cid_content=shoptop"><img alt="${salelp_primary_field4}" src="${salelp_primary_field5}" /></a>\n</div>\n<div id="bfmobile"><a onclick="s_objectID='Shop Banner';"href="${salelp_primary_field2}?cid_source=banner&amp;cid_medium=int&amp;cid=${salelp_primary_field3}&amp;cid_content=shoptop"><img alt="${salelp_primary_field4}" src="${salelp_primary_field6}" /></a>\n</div>\n</div>\n`;
+    const salelp_primary_code = `<!-- EN Sale LP Primary Banner -->\n<div class="homebanner">\n<div id="bfdesk"><a onclick="s_objectID='Shop Banner';"href="${salelp_primary_field2}?utm_source=banner&amp;utm_medium=int&amp;utm_campaign=${salelp_primary_field3}&amp;utm_content=shoptop"><img alt="${salelp_primary_field4}" src="${salelp_primary_field5}" /></a>\n</div>\n<div id="bfmobile"><a onclick="s_objectID='Shop Banner';"href="${salelp_primary_field2}?utm_source=banner&amp;utm_medium=int&amp;utm_campaign=${salelp_primary_field3}&amp;utm_content=shoptop"><img alt="${salelp_primary_field4}" src="${salelp_primary_field6}" /></a>\n</div>\n</div>\n`;
     document.getElementById('salelp_primary_output').textContent = salelp_primary_code;    
 
     
